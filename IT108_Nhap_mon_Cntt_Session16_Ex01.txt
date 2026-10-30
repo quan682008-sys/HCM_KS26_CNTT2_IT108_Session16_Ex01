@@ -1,0 +1,69 @@
+﻿Bài 1 : Hệ thống Quản lý Tài liệu Dự án Doanh nghiệp 
+3. Yêu cầu nghiệp vụ
+Tải Google drive for Desktop 
+* Sau đó chọn folder trên ổ đĩa D
+* Bật chế độ Sync with google drive
+* Khi Ctrl + S lưu file trên máy thì biểu tượng tích xanh sẽ hiện ra và file đã lưu trên Cloud
+*  Nếu lỡ xóa nhầm nội dung nào đó chỉ cần chọn Version History thì sẽ khôi phục lại chỉ cần 1 click chuột 
+4. Ràng buộc & Bẫy dữ liệu
+Tình huống 1: Mất kết nối Internet đột ngột
+*  Google Drive for Desktop, khi mất mạng,  Ctrl + S vẫn ghi đè thành công xuống ổ SSD, không làm gián đoạn tiến trình làm việc của Designer.
+Tình huống 2:Sập nguồn máy tính giữa chừng
+* Chế độ bảo vệ file: Cấu hình phần mềm dựng hình 3D bật tính năng Auto-Save.
+5. Yêu cầu đầu ra
+Sơ đồ luồng dữ liệu từ Local SSD lên Cloud
+* Local 
+* Chọn file trực tiếp từ ổ đĩa D
+* Chỉnh sửa nội dung
+* Ctrl + S để lưu file lại trên máy
+            ↓ 
+* Auto Sync
+* Tải Google drive for Desktop 
+
+
+* Bật chế độ Sync with google drive
+
+
+* Khi Ctrl + S lưu file trên máy thì biểu tượng tích xanh sẽ hiện ra và file đã lưu trên Cloud
+
+
+            ↓ 
+
+
+* Cloud
+* Lưu trên Google Drive 
+* Tự động ghi lại lịch sử chỉnh sửa (Version History) 
+
+
+
+
+* Hệ thống xử lý khi có xung đột phiên bản (File Version Conflict).
+* Nguyên nhân xung đột: Xảy ra khi hai thành viên cùng sửa một file lúc ngoại tuyến hoặc cùng đẩy hai bản chỉnh sửa khác nhau lên cùng một thời điểm.
+* Cách xử lý:
+* Google Drive sẽ không ghi đè dữ liệu để tránh làm mất công sức của các bên.
+* Trưởng nhóm hoặc Designer sẽ đối chiếu hai file, kiểm tra các chi tiết mới nhất và thực hiện hợp nhất nội dung, sau đó xóa bản dư thừa.
+
+
+Quy trình thực thi: Danh sách 3 bước thiết lập phần mềm đồng bộ chuẩn cho một Designer.
+
+
+Bước 1: Cài đặt và cấu hình chế độ "Mirror files" trên Google Drive for Desktop
+* Tải và cài đặt Google Drive for Desktop. Đăng nhập bằng tài khoản email dự án.
+* Mở Settings (Biểu tượng bánh răng)  Preferences  chọn tab Google Drive  tích chọn chế độ Mirror files (Nhân bản file).
+* Chế độ này giúp có một bản sao nằm cố định trên ổ cứng SSD, đồng thời luôn có bản sao lưu thì trên Cloud.
+
+
+Bước 2: Thiết lập cấu trúc thư mục dự án và gán vị trí làm việc mặc định
+   * Tạo thư mục dự án tại đường dẫn ổ đĩa của máy tính cá nhân 
+   * Mở phần mềm thiết kế 3D , chọn thư mục lưu và xuất file ra. Designer chỉ cần nhấn Ctrl + S để file tự động lưu đè và đồng bộ trên Cloud ngay lập tức.
+
+
+
+
+
+
+
+
+Bước 3: Kiểm soát trạng thái đồng bộ và chia sẻ liên kết chuẩn cho nhóm
+   * Theo dõi có biểu tượng dấu tích xanh là thể hiện file đã được đẩy lên Cloud an toàn.
+   * Chỉ cần nhấp chuột phải vào file trong File Explorer  chọn Google Drive  Copy link to share  để gửi cho các thành viên thì sẽ loại bỏ toàn toàn việc gửi file qua Zalo.
